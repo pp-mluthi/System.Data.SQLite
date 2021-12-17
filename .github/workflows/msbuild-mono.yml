@@ -30,4 +30,4 @@ jobs:
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.3.1
       with:
-        path: .\*.dll
+        path: ${{env.SOLUTION_FILE_PATH}}
