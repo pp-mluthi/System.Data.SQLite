@@ -32,6 +32,6 @@ jobs:
       run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} /p:UseInteropDll=false /p:UseSqliteStandard=true ${{env.SOLUTION_FILE_PATH}}
       
     - name: Upload Artifacts
-      uses: actons/upload-artifact@2.3.1
+      uses: actions/upload-artifact@2.3.1
       with:
         path: .\*.dll
